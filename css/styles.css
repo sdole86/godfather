@@ -12,7 +12,14 @@ body {
   object-fit: cover
 }
 
-#content {
+.content {
+  width: 890px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#intro {
   width: 890px;
   font-family: "Permanent Marker";
   margin-right: auto;
@@ -68,4 +75,10 @@ body {
   width: 400px;
   height: 400px;
   object-fit: cover
+}
+
+#about {
+  background-color: white;
+  padding: 20px;
+  height: auto;
 }
