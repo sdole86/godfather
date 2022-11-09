@@ -6,16 +6,15 @@
     <meta name="description" content="A Godfather fanpage">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/character.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap">
+    <link rel="stylesheet" href="/css/photo.css">
     <link rel="stylesheet" href="/css/jquery-ui.css">
-    <link rel="stylesheet" href="/css/fotorama.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Permanent+Marker" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap">
     <script src="/js/jquery-3.6.0.js"></script>
     <script src="/js/jquery-ui.js"></script>
     <script src="/js/script.js"></script>
     <script src="/js/quote.js"></script>
-    <script src="/js/fotorama.js"></script>
+    <script src="/js/jquery.Photostack.js"></script>
     <script src="/js/lightboxed.js"></script>
 
 </head>
@@ -37,24 +36,32 @@
             <div id="tab-bar"></div>
             <ul>
                 <li><a href="#tabs-1">Corleone, M.</a></li>
-                <li><a href="#tabs-3">Details</a></li>
+                
                 <li><a href="#tabs-4">History</a></li>
                 <li><a href="#tabs-5">Quotes</a></li>
                 <li><a href="#tabs-2">Photos</a></li>
+                <li><a href="#tabs-3">Details</a></li>
             </ul>
             <div id="tabs-1">
-                <div class="character-image"><img src="/img/char_michael.jpg"></div>
+                <div class="character-image">
+                    <img src="/img/char_michael.jpg">
+                </div>
             </div>
             <div id="tabs-2">
-                <div class="fotorama" data-width="100%" data-ratio="800/600">
-                    <img src="/img/img_michael2.jpg">
-                    <img src="/img/img_michael3.jpg">
-                    <img src="/img/img_michael4.jpg">
-                    <img src="/img/img_michael5.jpg">
 
+                <div id="photo-gallery">
+                    <ul class="photostack">
+                        <li><img src="/img/img_michael1.jpg"></li>
+                        <li><img src="/img/img_michael2.jpg"></li>
+                        <li><img src="/img/img_michael3.jpg"></li>
+                        <li><img src="/img/img_michael4.jpg"></li>
+                        <li><img src="/img/img_michael5.jpg"></li>
+                        <li><img src="/img/img_michael6.jpg"></li>
+                    </ul>
                 </div>
-
-
+                <script>
+                    $(".photostack").Photostack();
+                </script>
             </div>
             <div id="tabs-3">
                 <div id="detail-table" class="letter">
