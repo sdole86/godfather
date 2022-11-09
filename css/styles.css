@@ -1,12 +1,12 @@
 body {
   background-color: rgb(19, 18, 18);
-  color:black;
-  
-  
+  color: black;
+
+
 }
 
 #quotes img {
-  filter:saturate(0%) sepia(100%) contrast(150%) saturate(150%);
+  filter: saturate(0%) sepia(100%) contrast(150%) saturate(150%);
   width: 700px;
   height: 540px;
   object-fit: cover
@@ -21,7 +21,7 @@ body {
 
 
 #quotes p {
-  font-family: "Permanent Marker", arial, serif; 
+  font-family: "Permanent Marker", arial, serif;
   font-size: 18px;
   font-weight: bold;
 }
@@ -62,10 +62,10 @@ body {
 
 
 }
+
 .character-image img {
-  filter:saturate(0%) sepia(100%) contrast(150%) saturate(150%);
+  filter: saturate(0%) sepia(100%) contrast(150%) saturate(150%);
   width: 400px;
   height: 400px;
   object-fit: cover
-
 }
