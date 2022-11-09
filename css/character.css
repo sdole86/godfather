@@ -1,0 +1,104 @@
+@import "compass/css3";
+
+* {
+    color: black;
+}
+
+.content {
+    display: flexbox;
+
+}
+
+#top-section {
+    display: flex;
+    flex-direction: row;
+}
+
+#character-intro {
+    order: 1;
+}
+
+#tabs {
+    margin-top: 50px;
+    background-image: url(/img/bg_manilla.jpg);
+    height: 700px;
+    overflow-y: auto;
+}
+
+#quote-section {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.character-quote {
+    font-family: 'Reenie Beanie';
+    font-size: 22px;
+    background-color: white;
+    margin: 5px;
+    margin-bottom: 10px;
+    padding: 10px 10px 20px 30px;
+    border-radius: 5px;
+    width: 220px;
+    height: 280px;
+    background: #ffa;
+    overflow: hidden;
+    padding: 20px;
+    box-shadow:
+        inset 0 -40px 40px rgba(0, 0, 0, 0.2),
+        inset 0 25px 10px rgba(0, 0, 0, 0.2),
+        0 5px 6px 5px rgba(0, 0, 0, 0.2);
+}
+
+.character-quote:nth-child(odd) {
+    background: rgb(252, 252, 157);
+    transform: rotate(-1deg)
+}
+
+.character-quote:nth-child(4n+1) {
+    background: rgb(233, 233, 159);
+    transform: rotate(2deg)
+}
+
+#detail-table {
+    padding: 15px;
+    background-color: white;
+    background-image: url(/img/bg_paper.jpg);
+}
+
+.letter {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/img/bg_paper.jpg) !important;
+    margin: 26px auto 0;
+    max-width: 550px;
+    min-height: 300px;
+    padding: 24px;
+    position: relative;
+    width: 80%;
+}
+
+.letter:before,
+.letter:after {
+    content: "";
+    height: 98%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.letter:before {
+    background: #fafafa;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    left: -5px;
+    top: 4px;
+    transform: rotate(-2.5deg);
+}
+
+.letter:after {
+    background: #f6f6f6;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    right: -3px;
+    top: 1px;
+    transform: rotate(1.4deg);
+}

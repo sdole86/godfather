@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(19, 18, 18);
+  color:black;
+  
+  
+}
+
+#quotes img {
+  filter:saturate(0%) sepia(100%) contrast(150%) saturate(150%);
+  width: 700px;
+  height: 540px;
+  object-fit: cover
+}
+
+#content {
+  width: 890px;
+  font-family: "Permanent Marker";
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+#quotes p {
+  font-family: "Permanent Marker", arial, serif; 
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#quotes {
+  background: #ffffff;
+  display: inline-block;
+  margin: 55px 75px 30px;
+  padding: 15px 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+  width: 700px;
+}
+
+.character-image {
+  background: #ffffff;
+  display: flex;
+  padding: 15px 15px 30px;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  margin: auto;
+  margin-top: 30px;
+  width: 400px;
+
+
+}
+.character-image img {
+  filter:saturate(0%) sepia(100%) contrast(150%) saturate(150%);
+  width: 400px;
+  height: 400px;
+  object-fit: cover
+
+}
