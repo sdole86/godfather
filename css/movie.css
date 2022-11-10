@@ -79,8 +79,6 @@ iframe {
 }
 
 .cast {
-  background-color: white !important;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(/img/bg_paper.jpg) !important;
   margin: 15px;
   box-shadow: 1px 1px 1px rgba(0,0,0,0.25) ;
   border: 1px solid #bbb;
@@ -96,6 +94,7 @@ iframe {
 
 .paper {
   background: #fff;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(/img/bg_paper.jpg) !important;
   padding: 30px;
   position: relative;
 }
