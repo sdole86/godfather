@@ -80,8 +80,10 @@ iframe {
 
 .cast {
   background-color: white !important;
-  background-image: url(/img/bg_paper.jpg) !important;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),url(/img/bg_paper.jpg) !important;
   margin: 15px;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25) ;
+  border: 1px solid #bbb;
 }
 
 .cast ul {
@@ -90,4 +92,41 @@ iframe {
   -moz-columns: 2;
   list-style-type: none;
   
+}
+
+.paper {
+  background: #fff;
+  padding: 30px;
+  position: relative;
+}
+
+.paper,
+.paper::before,
+.paper::after {
+  /* Styles to distinguish sheets from one another */
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.25) ;
+  border: 1px solid #bbb;
+}
+
+.paper::before,
+.paper::after {
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 99%;
+  background-color: #eee;
+}
+
+.paper::before {
+  right: 15px;
+  top: 0;
+  transform: rotate(-1deg);
+  z-index: -1;
+}
+
+.paper::after {
+  top: 5px;
+  right: -5px;
+  transform: rotate(1deg);
+  z-index: -2;
 }
